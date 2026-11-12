@@ -18,5 +18,14 @@ def main():
 
     Anna = client.Client('Anna', 150)
     Ivan = client.Client('Ivan', 250)
+    
+    Anna.get_bike(1, 'regular')
+    Anna.return_bike(1)
+    
+    Anna.get_bike(2, 'electric')
+    Anna.return_bike(2)
+    
+    Ivan.get_bike(4, 'regular')
+    Ivan.return_bike(4)
 
 main()
