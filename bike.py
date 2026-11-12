@@ -11,7 +11,7 @@ class Bike:
         self.number = number
         self.price = get_bike_price(self.bike_type)
         self.status = "available"
-        self.battery = battery if self.bike_type = "electric" else 100
+        self.battery = battery if self.bike_type == "electric" else 100
     def change_status(self, new_status:str):
         self.status = new_status
         return self.status

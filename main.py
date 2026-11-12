@@ -7,8 +7,8 @@ def main():
     station_b = station.Station()
 
     bike_1 = bike.Bike('regular', 1)
-    bike_2 = bike.Bike('electric', 2)
-    bike_3 = bike.Bike('electric', 3)
+    bike_2 = bike.Bike('electric', 2, 100)
+    bike_3 = bike.Bike('electric', 3, 75)
     bike_4 = bike.Bike('regular', 4)
 
     station_a.leave_bike(bike_1)
