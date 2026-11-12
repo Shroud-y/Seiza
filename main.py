@@ -1,7 +1,8 @@
 import station, bike, client, admin
+from admin import Administrator
 
 def main():
-    admin = admin.Administrator()
+    admin = Administrator()
 
     station_a = station.Station()
     station_b = station.Station()

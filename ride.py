@@ -8,7 +8,7 @@ class Ride():
     def __init__(self, bike_type, balance):
         self.minute_price = get_bike_price(bike_type)
 
-        self.max_time = calc_max_time(balance, minute_price)
+        self.max_time = calc_max_time(balance, self.minute_price)
         self.start_time = datetime.now()
     
     def end(self):
@@ -22,4 +22,4 @@ class Ride():
         current_time = datetime.now()
         current_minutes = (current_time - self.start_time).minutes()
 
-        return current_minutes < max_time
+        return current_minutes < self.max_time
