@@ -9,11 +9,7 @@ class Administrator:
         self.profit += profit
 
     def bikes_on_stations(self, stations):
+        bike_amount = {}
         for station in stations:
-            pass
-
-admin = Administrator()
-
-admin.get_profit(25)
-
-print(admin.profit)
+            bike_amount[station.id] = station.get_bike_amount()
+        return bike_amount    
