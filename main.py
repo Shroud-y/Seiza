@@ -1,6 +1,11 @@
-import station.py, bike.py, Client.py
+from station import Station
+from bike import Bike
+from client import Client
+from admin import Administrator
 
 def main():
+    Admin = Administrator()
+
     station_a = Station()
     station_b = Station()
 
@@ -16,6 +21,16 @@ def main():
 
     Anna = Client('Anna', 150)
     Ivan = Client('Ivan', 250)
+
+    Anna.get_bike(1, 'regular')
+    Anna.return_bike(1)
+
+    Anna.get_bike(2, 'electric')
+    Anna.return_bike(1)
+
+    Ivan.get_bike(4, 'regular')
+    Ivan.return_bike(1)
+
 
 
 
