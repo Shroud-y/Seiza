@@ -14,6 +14,8 @@ class Station():
     def get_bike(self, requested_type = None):
         for bike in self.bikes:
             if bike.bike_type == requested_type:
+                if requested_type == "electric" and bike.battery < 20:
+                    continue
                 self.bikes.remove(bike)
                 return bike
         
