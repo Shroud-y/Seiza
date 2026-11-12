@@ -1,4 +1,4 @@
-import station.py, bike.py, Client.py
+import station, bike, Client
 
 def main():
     station_a = Station()
